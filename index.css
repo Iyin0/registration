@@ -120,7 +120,7 @@ input:focus {
     outline: none;
 }
 
-input:required:invalid {
+input:not(:focus):not(:placeholder-shown):invalid {
     border: 1px solid hsl(0, 100%, 74%);
     background-image: url(./images/icon-error.svg);
     background-repeat: no-repeat;
@@ -128,7 +128,7 @@ input:required:invalid {
     background-origin: content-box;
 }
 
-input:required:invalid~.error-message {
+input:not(:focus):not(:placeholder-shown):invalid~.error-message {
     display: block;
 }
 
