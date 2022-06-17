@@ -37,7 +37,6 @@ body {
 
 main {
     height: 100vh;
-    /* width: 100vw; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,6 +116,10 @@ input {
     color: hsl(0, 100%, 74%);
 }
 
+input:focus {
+    outline: none;
+}
+
 input:required:invalid {
     border: 1px solid hsl(0, 100%, 74%);
     background-image: url(./images/icon-error.svg);
@@ -159,7 +162,7 @@ form p {
     }
 
     .left {
-        margin-top: 30px;
+        margin-top: 300px;
         text-align: center;
     }
 
